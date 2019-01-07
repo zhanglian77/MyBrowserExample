@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/myBookmarksListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:background="#00000000">
+            </ListView>
+        </LinearLayout>
+
+    <TableLayout
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:stretchColumns="0"
+        android:id="@+id/buttonTableLayout"
+        android:background="#000000">
+
+        <TableRow
+           android:layout_height="wrap_content"
+            android:id="@+id/myButtonRow">
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:text="Back to Homepage"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

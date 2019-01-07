@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mySwipeLayout"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+ <LinearLayout
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:background="@drawable/paddingstyle">
+
+         <Button
+             android:id="@+id/myBookmarkButton"
+             android:layout_width="39dp"
+             android:layout_height="32dp"
+             android:layout_weight="0.1"
+             android:background="@drawable/ic_star_border_black_24dp" />
+
+         <EditText
+             android:id="@+id/myEditText"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:ems="10"
+             android:inputType="textPersonName"
+             android:text="https://" />
+
+         <Button
+             android:id="@+id/mySearchButton"
+             android:layout_width="40dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="0.1"
+             android:background="@drawable/ic_search_black_24dp" />
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/myLinearLayout"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="30dp">
+
+         <ProgressBar
+             android:id="@+id/myProgressBar"
+             android:layout_weight="0.1"
+             style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="1dp" />
+
+         <ImageView
+             android:id="@+id/myImageView"
+             android:src="@mipmap/ic_launcher"
+             android:layout_weight="0.9"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />
+     </LinearLayout>
+
+     <WebView
+         android:id="@+id/myWebView"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+     </WebView>
+
+ </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
